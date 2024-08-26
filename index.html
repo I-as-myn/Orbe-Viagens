@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbe Viagens | Sua Jornada Começa Aqui </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+        .navbar-nav .nav-link.active{
+            color: #fff;
+        }
+
+        .nav-link{
+            text-align: center;
+        }
+
+        section{
+            background-color: #c4cdff;
+            padding-top: 70px;
+        }
+
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1000; 
+            background-color: #7c94ff;
+            color: #fff;
+        }
+        
+        body{
+            background-color: #7c94ff;
+        }
+
+        .carousel-item img {
+            height: 500px; /* Ajuste a altura desejada aqui */
+            object-fit: cover; /* Faz com que a imagem cubra o container sem ser cortada */
+            width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+        }
+        .carousel-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #inicio{
+            padding-top: 0;
+        }
+
+        textarea{
+    resize: none;
+    height: 120px;
+}
+
+        #contato{
+            padding-bottom: 100px;
+        }
+        footer{
+            background-color: #7c94ff;
+            border: none;
+            color: #fff;
+        }
+
+        
+        </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+            <h1>Orbe Viagens</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinos">Destinos</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#pacotes">Pacotes</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+
+    <section id="inicio">
+        
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="1000" class="carousel-item active">
+                    <img class="d-block w-100" src="./img/carousel/beach-418742_1280.jpg" />
+                </div>
+                <div data-bs-interval="1000" class="carousel-item">
+                    <img class="d-block w-100" src="./img/carousel/beach-6517214_1280.jpg" />
+                </div>
+                <div data-bs-interval="1000" class="carousel-item">
+                    <img class="d-block w-100" src="./img/carousel/portofino-4839356_1280.jpg" />
+                </div>
+                <div data-bs-interval="1000" class="carousel-item">
+                    <img class="d-block w-100" src="./img/carousel/prague-7171444_1280.jpg" />
+                </div>
+                <div data-bs-interval="1000" class="carousel-item">
+                    <img class="d-block w-100" src="./img/carousel/train-62849_1280.jpg" />
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo"  data-bs-slide= "prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo"  data-bs-slide= "next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class= "active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+            </div>
+        </div>    
+    </section>
+
+    <section id="destinos">
+        <div class="container">
+        <h2>Destinos</h2>
+            <nav class="nav nav-pills">
+                <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Nacionais</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Internacionais</button>
+            </nav>
+            
+            <div class="tab-content">
+            <div class="tab-pane active" id="aba1">
+                
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card">
+                                <img src="./img/destinos/rio de janeiro.jpg" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Rio de Janeiro</h4>
+                                    <h5 class="card-subtitle"> A partir de <strong>Sex 25 Out</strong> até <strong>Qua 30 Out</strong></h5>
+                                    <p class="card-text">
+                                        <big>R$700,00 </big> por pessoa
+                                        <p><small>Taxas e impostos não inclusos</small></p>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                    </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="./img/destinos/são paulo.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">São Paulo</h4>
+                            <h5 class="card-subtitle"> A partir de <strong>Sex 25 Out</strong> até <strong>Qua 30 Out</strong></h5>
+                            <p class="card-text">
+                                <big>R$798,00 </big> por pessoa
+                                <p><small>Taxas e impostos não inclusos</small></p>
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="./img/destinos/salvador.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Salvador</h4>
+                            <h5 class="card-subtitle"> A partir de <strong>Sex 25 Out</strong> até <strong>Qua 30 Out</strong></h5>
+                            <p class="card-text">
+                                <big>R$992,00 </big> por pessoa
+                                <p><small>Taxas e impostos não inclusos</small></p>
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="tab-pane" id="aba2">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./img/destinos/nova york.jpg" />
+                            <div class="card-body">
+                                <h4 class="card-title">Nova York - EUA</h4>
+                                <h5 class="card-subtitle"> A partir de <strong>Sex 25 Out</strong> até <strong>Qua 30 Out</strong></h5>
+                                <p class="card-text">
+                                    <big>R$4300,00 </big> por pessoa
+                                    <p><small>Taxas e impostos não inclusos</small></p>
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="./img/destinos/paris.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Paris - França</h4>
+                        <h5 class="card-subtitle"> A partir de <strong>Sex 25 Out</strong> até <strong>Qua 30 Out</strong></h5>
+                        <p class="card-text">
+                            <big>R$5980,00 </big> por pessoa
+                            <p><small>Taxas e impostos não inclusos</small></p>
+                        </p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="./img/destinos/itália.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Roma - Itália</h4>
+                        <h5 class="card-subtitle"> A partir de <strong>Sex 25 Out</strong> até <strong>Qua 30 Out</strong></h5>
+                        <p class="card-text">
+                            <big>R$5920,00 </big> por pessoa
+                            <p><small>Taxas e impostos não inclusos</small></p>
+                        </p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        </section>
+
+    
+    <section id="pacotes">
+        <div class="container">
+            <h2>Pacotes</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="./img/pacotes/japão.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Tóquio - Japão</h4>
+                            <h5 class="card-subtitle">A partir de <strong>Qui 03 Jul</strong> até <strong>Qui 17 Jul</strong></h5>
+                            <p class="card-text">
+                                Voo + hospedagem no Park Hotel Tokyo Nihonbasi + transfer
+                                <p>A partir de R$ 12.275,00 por pessoa</p>
+                                <p><small>Taxas e impostos não inclusos</small></p>
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="./img/pacotes/foz do iguaçu.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Foz do Iguaçu - Brasil</h4>
+                            <h5 class="card-subtitle">A partir de <strong>Qui 06 Fev</strong> até <strong>Dom 09 Fev</strong></h5>
+                            <p class="card-text">
+                                Voo + Hospedagem no Continental Inn + buffet de café da manhã + transfer
+                                <p>A partir de R$ 1.195,00 por pessoa</p>
+                                <p><small>Taxas e impostos não inclusos</small></p>
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="./img/pacotes/suiça.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Zurich - Suiça</h4>
+                            <h5 class="card-subtitle">A partir de <strong>Seg 06 Jan</strong> até <strong>Seg 13 Jan</strong></h5>
+                            <p class="card-text">
+                                Voo + Hospedagem no citizenM Zurich
+                                <p>A partir de R$9.985,00 por pessoa</p>
+                                <p><small>Taxas e impostos não inclusos</small></p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>
+                
+                    <label class="form-label"   for="nome">Nome:</label>
+                    <input class="form-control" type="text" id="nome" name="nome">
+                    <label class="form-label" for="telefone">Telefone:</label>
+                    <input class="form-control" type="tel" id="telefone" name="telefone">
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="form-control" type="email" id="email" name="email">
+                    <label class="form-label" for="mensagem">Mensagem:</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem"></textarea>
+                    <div class="form-check form-switch">
+                        <label class="form-check-label" for="aceito-termos">Li e concordo com os termos e condições de uso</label>
+                        <input class="form-check-input" type="checkbox" id="aceito-termos">
+                    </div>
+                
+
+
+                <button class="btn btn-success" type="submit">Enviar</button>
+            </form>
+        
+
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <p> 2024 &copy; Orbe Viagens - Todos os direitos reservados </p>
+        </div>
+        </footer>
+
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</body>
+</html>
